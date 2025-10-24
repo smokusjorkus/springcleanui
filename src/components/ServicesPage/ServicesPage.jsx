@@ -65,8 +65,17 @@ const ServicesPage = () => {
             <hr className="divider" />
 
             <p>
-              Basic Cleaning includes dusting, sweeping, mopping, and bathroom
-              sanitation.
+              Includes:
+              <ul>
+                <li>Sweeping, mopping, and dusting</li>
+                <li>Bathroom and kitchen surface cleaning</li>
+                <li>Trash disposal</li>
+                <li>Light organization</li>
+              </ul>
+              <hr className="divider" />
+              Duration: ~1–2 hours
+              <br />
+              Recommended for: small spaces, light maintenance
             </p>
           </div>
         )}
@@ -90,7 +99,6 @@ const ServicesPage = () => {
                   Bedmaking and minor decluttering
                 </li>
               </ul>
-              <br></br>
               <hr className="divider" />
               Duration: ~2–3 hours
               <br />
@@ -103,9 +111,20 @@ const ServicesPage = () => {
           <div className="service-info">
             <h1>Premium: ₱1000 </h1>
             <hr className="divider" />
+
             <p>
-              Includes everything in Standard plus deep cleaning, window
-              washing, and inside appliance cleaning.
+              Includes everything in Standard, plus:
+              <ul>
+                <li>Deep cleaning (walls, baseboards, under furniture)</li>
+                <li>Kitchen appliance interiors</li>
+                <li>Polishing surfaces</li>
+                <li>Optional fragrance or disinfectant finish</li>
+              </ul>
+              <hr className="divider" />
+              Duration: ~3–4 hours
+              <br />
+              Recommended for: general cleaning days, move-ins/outs, or monthly
+              deep cleans
             </p>
           </div>
         )}
