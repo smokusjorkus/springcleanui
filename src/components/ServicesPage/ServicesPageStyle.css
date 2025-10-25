@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cal+Sans&family=Nunito:wght@400;600;800&display=swap");
 
 .services-page-hero {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: row; /* side-by-side layout */
   justify-content: space-between;
@@ -71,6 +71,26 @@
   outline: none;
   background-color: #1c4274;
   color: #aae858;
+}
+
+.book-button {
+  background-color: #1c4274;
+  color: #aae858;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-family: "Cal Sans", sans-serif;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 20px auto; /* centers horizontally */
+  display: block; /* required for margin auto to work */
+}
+
+.book-button:hover {
+  background-color: #1c4274;
+  color: #aae858;
+  transform: scale(1.05);
 }
 
 /* SERVICE INFO CARDS */

@@ -77,6 +77,7 @@ const ServicesPage = () => {
               <br />
               Recommended for: small spaces, light maintenance
             </p>
+            <button className="book-button">Book Now!</button>
           </div>
         )}
 
@@ -104,6 +105,7 @@ const ServicesPage = () => {
               <br />
               Recommended for: regular household cleaning (weekly or bi-weekly)
             </p>
+            <button className="book-button">Book Now!</button>
           </div>
         )}
 
@@ -126,6 +128,7 @@ const ServicesPage = () => {
               Recommended for: general cleaning days, move-ins/outs, or monthly
               deep cleans
             </p>
+            <button className="book-button">Book Now!</button>
           </div>
         )}
 

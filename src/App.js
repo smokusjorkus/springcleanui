@@ -4,6 +4,7 @@ import React from "react";
 import NavBar from "./components/Navbar/NavBar";
 import LandingPage from "./components/LandingPage/LandingPage";
 import ServicesPage from "./components/ServicesPage/ServicesPage";
+import AboutUsPage from "./components/AboutUsPage//AboutUsPage";
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
       </section>
       <section id="services">
         <ServicesPage />
+      </section>
+      <section id="aboutus">
+        <AboutUsPage />
       </section>
     </div>
   );
