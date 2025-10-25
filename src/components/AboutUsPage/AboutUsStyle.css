@@ -1,3 +1,67 @@
-.aboutus-container {
+.aboutus-hero {
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1c4274;
+  color: white;
+  padding: 0 80px;
+  box-sizing: border-box;
+  gap: 60px;
+}
+
+/* LEFT SIDE IMAGE */
+.aboutus-image {
+  flex: 1;
+  background-image: url("../../assets/aboutus.jpg"); /* adjust path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  border-radius: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aboutus-image:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* RIGHT SIDE TEXT */
+.explanation-container {
+  flex: 1;
+  text-align: justify;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.title h1 {
+  font-family: "Cal Sans", sans-serif;
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: #a6e22e;
+}
+
+.description p {
+  color: #e9f1ff;
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+  .aboutus-hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+  }
+
+  .explanation-container {
+    text-align: center;
+  }
+
+  .aboutus-image {
+    width: 100%;
+    min-height: 300px;
+  }
 }
