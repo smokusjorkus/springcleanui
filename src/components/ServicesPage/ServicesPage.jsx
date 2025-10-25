@@ -131,7 +131,8 @@ const ServicesPage = () => {
 
         {serviceType === "cleaner" && (
           <div className="service-info">
-            <h2 className="service-title">For Cleaners</h2>
+            <h1>For Cleaners</h1>
+            <hr className="divider" />
             <p>
               Join SpringClean and start earning! Accept bookings that fit your
               schedule, build your profile, and grow your reputation with
