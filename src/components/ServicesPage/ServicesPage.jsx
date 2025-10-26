@@ -141,6 +141,7 @@ const ServicesPage = () => {
               schedule, build your profile, and grow your reputation with
               satisfied customers.
             </p>
+            <button className="book-button">Register Now!</button>
           </div>
         )}
       </div>
