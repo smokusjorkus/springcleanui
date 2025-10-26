@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #1c4274;
+  background-color: #fccb01;
   color: white;
   padding: 60px 80px;
   box-sizing: border-box;
@@ -22,7 +22,7 @@
 /* Each explanation box */
 .explanation-container {
   flex: 1;
-  background-color: rgba(255, 255, 255, 0.05); /* light overlay for contrast */
+  background-color: #1c4274; /* light overlay for contrast */
   border-radius: 20px;
   padding: 30px;
   font-family: "Nunito", sans-serif;
