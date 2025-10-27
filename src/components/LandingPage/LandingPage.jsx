@@ -29,7 +29,9 @@ const LandingPage = () => {
       </p>
 
       <div className="hero-buttons">
-        <button className="learn-more-btn">Learn More</button>
+        <a href="/chooseyouruser">
+          <button className="learn-more-btn">Get Started</button>
+        </a>
       </div>
     </div>
   );
