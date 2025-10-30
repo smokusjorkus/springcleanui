@@ -1,0 +1,145 @@
+/* SecondStep.css */
+
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.form-container {
+  border: 3px solid #aae858;
+  border-radius: 30px;
+  padding: 40px;
+  background-color: aliceblue;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.description h1 {
+  font-family: "Cal Sans", sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin: 0;
+  color: #1c4274;
+}
+
+.description p {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+  margin: 10px 0 0 0;
+  color: #555;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.name-row {
+  display: flex;
+  gap: 15px;
+}
+
+.name-row .form-input {
+  flex: 1;
+}
+
+.form-input {
+  padding: 15px 20px;
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #aae858;
+  box-shadow: 0 0 0 3px rgba(170, 232, 88, 0.1);
+}
+
+.form-input::placeholder {
+  color: #999;
+}
+
+.button-group {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.back-button,
+.next-button {
+  flex: 1;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  font-family: "Cal Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-button {
+  background: linear-gradient(135deg, #e0e0e0 0%, #d0d0d0 100%);
+  color: #555;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.back-button:hover {
+  background: linear-gradient(135deg, #d0d0d0 0%, #c0c0c0 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.next-button {
+  background: linear-gradient(135deg, #aae858 0%, #8dd63f 100%);
+  color: #1c4274;
+  box-shadow: 0 4px 15px rgba(170, 232, 88, 0.3);
+}
+
+.next-button:hover {
+  background: linear-gradient(135deg, #1c4274 0%, #0f2847 100%);
+  color: #aae858;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(28, 66, 116, 0.4);
+}
+
+.back-button:active,
+.next-button:active {
+  transform: translateY(0px);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 30px 20px;
+  }
+
+  .description h1 {
+    font-size: 2rem;
+  }
+
+  .name-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+}

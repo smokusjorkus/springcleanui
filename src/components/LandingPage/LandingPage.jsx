@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./LandingPageStyle.css";
 import cleaner1 from "../../assets/cleaners1.jpg";
 import cleaner2 from "../../assets/cleaners2.jpg";
@@ -29,9 +30,9 @@ const LandingPage = () => {
       </p>
 
       <div className="hero-buttons">
-        <a href="/chooseyouruser">
+        <Link to="/chooseyouruser">
           <button className="learn-more-btn">Get Started</button>
-        </a>
+        </Link>
       </div>
     </div>
   );
