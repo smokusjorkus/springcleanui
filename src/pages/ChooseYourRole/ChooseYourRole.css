@@ -1,0 +1,90 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* full screen height */
+  background-color: #f8f9fa; /* optional, for contrast */
+  margin: 0;
+}
+
+.firstfrom-container {
+  width: 90%;
+  max-width: 600px; /* good size for centered form */
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 30px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.firstform-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.cleaner-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* spacing between icon and text */
+  background-color: #1c4274;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cleaner-btn:hover {
+  background-color: #aae858;
+  color: #1c4274;
+  transform: scale(1.05);
+}
+
+.cleaner-btn .icon {
+  transition: transform 0.3s ease;
+}
+
+.cleaner-btn:hover .icon {
+  transform: rotate(-15deg);
+}
+
+.customer-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* spacing between icon and text */
+  background-color: #1c4274;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.customer-btn:hover {
+  background-color: #aae858;
+  color: #1c4274;
+  transform: scale(1.05);
+}
+
+.customer-btn .icon {
+  transition: transform 0.3s ease;
+}
+
+.customer-btn:hover .icon {
+  transform: rotate(-15deg);
+}

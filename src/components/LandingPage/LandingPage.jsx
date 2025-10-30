@@ -16,7 +16,7 @@ const LandingPage = () => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 5000);
 
-    return () => clearInterval(interval); // 🧹 cleanup when unmounted
+    return () => clearInterval(interval);
   }, []);
 
   return (
@@ -25,13 +25,13 @@ const LandingPage = () => {
       style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
     >
       <h2 className="hero-title">Welcome to SpringClean</h2>
-      <p className="hero-subtitle" style={{ color: "white" }}>
+      <p className="hero-subtitle">
         Your one-stop solution for all your cleaning needs.
       </p>
 
       <div className="hero-buttons">
-        <Link to="/chooseyouruser">
-          <button className="learn-more-btn">Get Started</button>
+        <Link to="/ChooseYourRole" className="learn-more-btn">
+          Get Started
         </Link>
       </div>
     </div>
