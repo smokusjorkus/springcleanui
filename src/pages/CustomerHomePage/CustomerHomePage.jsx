@@ -1,6 +1,9 @@
 import HomeBar from "../../components/Homebar/HomeBar";
 import CleanerCardComponent from "../../components/CustomerHomePage/CleanerCardComponent";
+import { useNavigate } from "react-router-dom";
 import './CustomerHomePage.css';
+
+
 
 export default function CustomerHomePage() {
   const cleaners = [
@@ -15,6 +18,12 @@ export default function CustomerHomePage() {
     { name: "Pristine Homes PH", loc: "Baguio City", rate: 4.7, img: "https://plus.unsplash.com/premium_photo-1664910214915-b89e63fcb72e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2xlYW5lcnN8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000" },
   ];
 
+  const navigate = useNavigate();
+
+  const handleViewHistory = () => {
+    navigate("/customer/bookingSummary")
+  };
+
   return (
     <>
       <HomeBar />
@@ -24,6 +33,7 @@ export default function CustomerHomePage() {
         <header className="settings-header">
           <h1>Book Now!</h1>
           <span>Trusted professionals ready to make your home shine.</span>
+          <button className="btn-viewhistory"onClick={handleViewHistory}>View Booking History</button>
         </header>
 
         {/* Cleaner Cards */}

@@ -285,3 +285,7 @@
 .booking-page {
   text-align: right;
 }
+
+.summary-list .no-bookings{
+  font-family: "Nunito", sans-serif;
+}
