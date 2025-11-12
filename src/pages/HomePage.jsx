@@ -3,7 +3,7 @@ import NavBar from "../components/Navbar/NavBar";
 import ServicesPage from "../components/ServicesPage/ServicesPage";
 import AboutUsPage from "../components/AboutUsPage/AboutUsPage";
 import LandingPage from "../components/LandingPage/LandingPage";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer/Footer";
 
 const HomePage = () => {
   return (
