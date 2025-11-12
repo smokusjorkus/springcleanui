@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./NavBarStyle.css";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,15 +9,15 @@ const NavBar = () => {
 
   return (
     <nav className="navbar-container">
-      <a href="#home" className="title-link">
+      <Link to="/" className="title-link">
         SpringClean
-      </a>
+      </Link>
 
       <div className={`nav-links ${isOpen ? "open" : ""}`}>
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#aboutus">About Us</a>
-        <a href="/chooseyouruser">Login/Sign Up</a>
+        <a href="/#">Home</a>
+        <a href="/#services">Services</a>
+        <a href="/#aboutus">About Us</a>
+        <Link to="/login/ChooseYourRole">Login/Sign Up</Link>
       </div>
 
       <div className="hamburger" onClick={toggleMenu}>
