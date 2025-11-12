@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import "./LandingPageStyle.css";
 import cleaner1 from "../../assets/cleaners1.jpg";
 import cleaner2 from "../../assets/cleaners2.jpg";
@@ -16,7 +15,7 @@ const LandingPage = () => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 5000);
 
-    return () => clearInterval(interval);
+    return () => clearInterval(interval); // 🧹 cleanup when unmounted
   }, []);
 
   return (
@@ -25,14 +24,14 @@ const LandingPage = () => {
       style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
     >
       <h2 className="hero-title">Welcome to SpringClean</h2>
-      <p className="hero-subtitle">
+      <p className="hero-subtitle" style={{ color: "white" }}>
         Your one-stop solution for all your cleaning needs.
       </p>
 
       <div className="hero-buttons">
-        <Link to="/Register" className="learn-more-btn">
-          Get Started
-        </Link>
+        <a href="/chooseyouruser">
+          <button className="learn-more-btn">Get Started</button>
+        </a>
       </div>
     </div>
   );
