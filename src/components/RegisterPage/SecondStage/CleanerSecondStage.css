@@ -1,0 +1,112 @@
+.cleanersecondstagecontainer {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c4274;
+  padding: 20px;
+  box-sizing: border-box;
+  gap: 90px;
+}
+
+.CLformcontainer {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.CLformGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.CLformGroup label {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #1c4274;
+}
+
+.CLformGroup input {
+  padding: 12px 15px;
+  border: 2px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: "Nunito", sans-serif;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.CLformGroup input:focus {
+  border-color: #1c4274;
+  box-shadow: 0 0 5px rgba(28, 66, 116, 0.4);
+}
+
+.CLbuttonGroup {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.CLbuttonGroup button {
+  padding: 12px 25px;
+  border-radius: 30px;
+  border: none;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.submit-button {
+  background-color: #1c4274;
+  color: #aae858;
+}
+
+.submit-button:hover {
+  transform: scale(1.05);
+  background-color: #16335a;
+}
+
+.back-button {
+  background-color: #d1d5db;
+  color: #1c4274;
+}
+
+.back-button:hover {
+  transform: scale(1.05);
+  background-color: #b0b5bb;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .CLformcontainer {
+    padding: 30px 20px;
+    gap: 15px;
+  }
+
+  .CLformGroup input {
+    font-size: 0.95rem;
+  }
+
+  .CLbuttonGroup button {
+    font-size: 1rem;
+  }
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  font-family: "Nunito", sans-serif;
+}

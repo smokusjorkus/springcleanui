@@ -1,0 +1,146 @@
+.firststage-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.toppart {
+  width: 100%;
+  padding: 30px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Back on left, heading centered */
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Heading centered */
+.toppart h1 {
+  font-family: "Cal Sans", sans-serif;
+  font-size: 3rem;
+  color: #1c4274;
+  text-align: center;
+  flex: 1; /* Take available space for proper centering */
+  margin: 0;
+}
+
+/* Back link styles */
+.toppart a {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+  color: #1c4274;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.3); /* subtle background */
+}
+
+.toppart a:hover {
+  background-color: rgba(28, 66, 116, 0.2);
+  color: #16335a;
+  transform: scale(1.05);
+}
+
+/* Optional: ensure heading is visually centered */
+.toppart h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.content-container {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  gap: 20px;
+}
+
+/* Left and Right sides */
+.firststage-left,
+.firststage-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.5s ease;
+}
+
+/* Default colors */
+.firststage-left {
+}
+
+.firststage-right {
+}
+
+/* Pseudo-element for background image */
+.firststage-left::after,
+.firststage-right::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+  z-index: 0;
+}
+
+/* Assign images */
+.firststage-left::after {
+  background-image: url("../../../assets/cleaner5.jpg");
+}
+
+.firststage-right::after {
+  background-image: url("../../../assets/customer.jpg");
+}
+
+/* Show image on hover */
+.firststage-left:hover::after,
+.firststage-right:hover::after {
+  opacity: 1;
+}
+
+/* Buttons */
+.cleaner-button,
+.customer-button {
+  position: relative;
+  z-index: 1;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-family: "Nunito", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.cleaner-button:hover,
+.customer-button:hover {
+  transform: scale(1.05);
+}
+
+/* Button colors */
+.cleaner-button {
+  background-color: #1c4274;
+  color: #aae858;
+}
+
+.customer-button {
+  background-color: #1c4274;
+  color: #aae858;
+}

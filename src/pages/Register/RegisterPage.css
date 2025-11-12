@@ -1,9 +1,8 @@
-.choose-user-page {
+.register-page {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #aae858;
-  padding: 20px;
 }
