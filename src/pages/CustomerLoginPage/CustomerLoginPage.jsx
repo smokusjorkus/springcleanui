@@ -8,7 +8,6 @@ const CustomerLoginPage = () => {
       {/* Left side */}
       <div className="left-side">
         <h1>SpringClean</h1>
-        <p>Book trusted cleaners for your home today.</p>
       </div>
 
       {/* Right side */}

@@ -10,7 +10,7 @@ export default function ThirdStep() {
         <h1>Account Created Successfully!</h1>
         <p>You can now log in and start using SpringClean.</p>
 
-        <Link to="/login/cleaner">
+        <Link to="/login/ChooseYourRole">
           <button className="login-btn">Log In</button>
         </Link>
       </div>
