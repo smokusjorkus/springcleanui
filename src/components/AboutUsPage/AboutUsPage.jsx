@@ -10,7 +10,7 @@ export default function AboutUsPage() {
             <h1>Who We Are</h1>
           </div>
           <div className="description">
-            <p style={{ color: "white" }}>
+            <p>
               At <strong>SpringClean</strong>, we believe that a clean space
               creates a clear mind. We’re a team of dedicated cleaners and
               organizers passionate about helping you live comfortably and
@@ -24,7 +24,7 @@ export default function AboutUsPage() {
             <h1>What We Do</h1>
           </div>
           <div className="description">
-            <p style={{ color: "white" }}>
+            <p>
               We offer a range of services — from{" "}
               <strong>Basic Cleaning</strong> for quick refreshes, to{" "}
               <strong>Premium Deep Cleaning</strong> for a spotless
@@ -39,7 +39,7 @@ export default function AboutUsPage() {
             <h1>Our Mission</h1>
           </div>
           <div className="description">
-            <p style={{ color: "white" }}>
+            <p>
               To make cleaning simple, affordable, and dependable — giving you
               more time for the things that matter most. We aim to connect
               customers with trusted cleaners while providing fair opportunities
