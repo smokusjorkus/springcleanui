@@ -1,8 +1,42 @@
-import React from "react";
+
 import "./CustomerLoginPage.css";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const CustomerLoginPage = () => {
+    
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+
+  const handleLogin = async () =>{
+    if(!email || !password){
+      alert("Please fill the field");
+      return;
+    }
+
+    const payload = { email, password };
+
+    try{
+      const response = await fetch("http://localhost:8080/api/customers/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      if(response.ok) {
+        const data = await response.json();
+        alert("Login Successfuly", data);
+        
+      }else{
+        const err = await response.json();
+        alert(err.message || "Invalid Credentials");
+      }
+    }catch(error){
+      alert("Something is wrong!");
+
+    }
+  };
+  
   return (
     <div className="page-container">
       {/* Left side */}
@@ -22,7 +56,9 @@ const CustomerLoginPage = () => {
             <input
               type="text"
               id="username"
+              value={email}
               placeholder="Enter your username"
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
 
@@ -32,13 +68,15 @@ const CustomerLoginPage = () => {
             <input
               type="password"
               id="password"
+              value={password}
               placeholder="Enter your password"
+              onChange={(e) => setPassword(e.target.value)}
             />
           </div>
 
           {/* Login button */}
           <div className="form-group">
-            <button className="login-btn">Log In</button>
+            <button className="login-btn" onClick={handleLogin}>Log In</button>
           </div>
 
           <p className="signup-text">
